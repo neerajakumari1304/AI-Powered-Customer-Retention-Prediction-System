@@ -32,6 +32,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 ---
 ###  Key Visualizations & Insights
 ## 1️ Churn Distribution
+![churn distribution](Visualization/churn_distribution.png)
 - **Graph**: Bar Chart (countplot)  
 - **Values**: No = 5,174 | Yes = 1,869  
 - **Observation**: Majority of customers did not churn.  
@@ -49,6 +50,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 ---
 
 ## 3️ Senior Citizen in Telecom Partner
+![senior citizen in telecom partner](Visualization/senior_citizen_in_telecom_partner.png)
 - **Graph**: Bar Chart (countplot)  
 - **Values**: Non-Seniors ≈ 1,450 per partner | Seniors ≈ 280 per partner.  
 - **Observation**: Ratio of young to old consistent across partners.  
