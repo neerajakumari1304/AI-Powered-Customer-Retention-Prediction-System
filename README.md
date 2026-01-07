@@ -2,9 +2,7 @@
 The goal of this project is to analyze customer data from a telecommunications company to predict whether a customer will churn (leave the service) or stay.
 
 ---
-
-##  Step 1: Exploratory Data Analysis (EDA)
-
+## 🧩 Step 1: Exploratory Data Analysis (EDA)
 ---
 
 ### Objective
