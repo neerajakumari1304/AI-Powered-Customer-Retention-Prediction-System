@@ -32,7 +32,6 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 ---
 ###  Key Visualizations & Insights
 ## 1️⃣ Churn Distribution
-![Churn Distribution](tenure_vs_churn.png)
 - **Graph**: Bar Chart (countplot)  
 - **Values**: No = 5,174 | Yes = 1,869  
 - **Observation**: Majority of customers did not churn.  
