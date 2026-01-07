@@ -1,0 +1,38 @@
+2026-01-07 13:12:02,516 - INFO - Data loaded succesfully
+2026-01-07 13:12:02,516 - INFO - total rows in the data : 7043
+2026-01-07 13:12:02,516 - INFO - total columns in the data : 22
+2026-01-07 13:12:02,516 - INFO -  telecom_partner     0
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+2026-01-07 13:12:02,516 - INFO - Missing Values in Total Charges:0
+2026-01-07 13:12:02,516 - INFO - total rows in the data : 7043
+2026-01-07 13:12:02,516 - INFO - total columns in the data : 21
+2026-01-07 13:12:02,516 - INFO - Sample data with new column:
+  telecom_partner  gender  SeniorCitizen Partner Dependents  tenure PhoneService     MultipleLines InternetService OnlineSecurity OnlineBackup DeviceProtection TechSupport StreamingTV StreamingMovies        Contract PaperlessBilling              PaymentMethod  MonthlyCharges TotalCharges Churn
+0             jio  Female              0     Yes         No       1           No  No phone service             DSL             No          Yes               No          No          No              No  Month-to-month              Yes           Electronic check           29.85        29.85    No
+1             jio    Male              0      No         No      34          Yes                No             DSL            Yes           No              Yes          No          No              No        One year               No               Mailed check           56.95       1889.5    No
+2            bsnl    Male              0      No         No       2          Yes                No             DSL            Yes          Yes               No          No          No              No  Month-to-month              Yes               Mailed check           53.85       108.15   Yes
+3          airtel    Male              0      No         No      45           No  No phone service             DSL            Yes           No              Yes         Yes          No              No        One year               No  Bank transfer (automatic)           42.30      1840.75    No
+4          airtel  Female              0      No         No       2          Yes                No     Fiber optic             No           No               No          No          No              No  Month-to-month              Yes           Electronic check           70.70       151.65   Yes
+2026-01-07 13:12:02,516 - INFO - start visualize
+2026-01-07 13:12:05,319 - INFO - visualize completed successfully
