@@ -25,7 +25,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 - **Matplotlib & Seaborn** – Visualization  
 - **Logging Module** – Workflow tracking & error handling
 - ---
-- ### 🧪 Feature Augmentation
+- ### Feature Augmentation
 - Added a synthetic variable: **Telecom Partner (Jio, Airtel, BSNL, Vodafone)**.  
 - Random assignment ensures balanced demographics across partners.  
 - Simulates competitive market conditions for deeper analysis.  
