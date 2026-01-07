@@ -40,6 +40,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 ---
 
 ## 2️ Telecom Partner vs Gender
+![Telecom Partner vs Gender](images/telecom_partner_vs_gender.png)
 - **Graph**: Bar Chart (countplot)  
 - **Values**: Even distribution across partners.  
 - **Observation**: Male/Female counts are balanced for each partner.  
