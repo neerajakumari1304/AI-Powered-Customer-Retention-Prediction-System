@@ -36,7 +36,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 - **Graph**: Bar Chart (countplot)  
 - **Values**: No = 5,174 | Yes = 1,869  
 - **Observation**: Majority of customers did not churn.  
-- **Insight**: Dataset shows **class imbalance** → need metrics beyond accuracy (Precision, Recall, F1).  
+- **Insight**: Dataset shows **data imbalance** → need metrics beyond accuracy (Precision, Recall, F1).  
 
 ---
 
@@ -81,7 +81,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 - **Graph**: Bar Chart (countplot with query)  
 - **Values**: Female = 747 | Male = 779  
 - **Observation**: Equal split in “Basic Phone Only” segment.  
-- **Insight**: Legacy users’ retention depends on call reliability & basic plan costs.  
+- **Insight**: Legacy users retention depends on call reliability & basic plan costs.  
 
 ---
 
