@@ -31,7 +31,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 - Simulates competitive market conditions for deeper analysis.  
 ---
 ###  Key Visualizations & Insights
-## 1️⃣ Churn Distribution
+## 1️ Churn Distribution
 - **Graph**: Bar Chart (countplot)  
 - **Values**: No = 5,174 | Yes = 1,869  
 - **Observation**: Majority of customers did not churn.  
@@ -39,7 +39,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 2️⃣ Telecom Partner vs Gender
+## 2️ Telecom Partner vs Gender
 - **Graph**: Bar Chart (countplot)  
 - **Values**: Even distribution across partners.  
 - **Observation**: Male/Female counts are balanced for each partner.  
@@ -47,7 +47,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 3️⃣ Senior Citizen in Telecom Partner
+## 3️ Senior Citizen in Telecom Partner
 - **Graph**: Bar Chart (countplot)  
 - **Values**: Non-Seniors ≈ 1,450 per partner | Seniors ≈ 280 per partner.  
 - **Observation**: Ratio of young to old consistent across partners.  
@@ -55,7 +55,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 4️⃣ Gender Distribution
+## 4️ Gender Distribution
 - **Graph**: Bar Chart (countplot)  
 - **Values**: Male = 3,555 | Female = 3,488  
 - **Observation**: Customer base is nearly 50/50.  
@@ -63,7 +63,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 5️⃣ Gender vs Churn
+## 5️ Gender vs Churn
 - **Graph**: Bar Chart (countplot)  
 - **Values**: Female (No = 2,549, Yes = 939) | Male (No = 2,625, Yes = 930)  
 - **Observation**: Churn is nearly identical for both genders.  
@@ -71,7 +71,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 6️⃣ Gender Breakdown (No Internet Service)
+## 6️ Gender Breakdown (No Internet Service)
 - **Graph**: Bar Chart (countplot with query)  
 - **Values**: Female = 747 | Male = 779  
 - **Observation**: Equal split in “Basic Phone Only” segment.  
@@ -79,7 +79,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 7️⃣ Tenure vs Churn
+## 7️ Tenure vs Churn
 - **Graph**: Histogram with KDE (histplot)  
 - **Values**: Stayed avg. = 37.5 months | Churned avg. = 17.9 months  
 - **Observation**: Customers churn early (within 1.5 years).  
@@ -87,8 +87,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 8️⃣ Contract Type vs Churn
-![Churn Distribution](images/churn_distribution.png)
+## 8️ Contract Type vs Churn
 - **Graph**: Bar Chart (barplot)  
 - **Values**:  
   - Month-to-month: No = 2,220 | Yes = 1,655  
@@ -99,7 +98,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 9️⃣ Internet Service vs Churn
+## 9️ Internet Service vs Churn
 - **Graph**: Bar Chart (barplot)  
 - **Values**:  
   - DSL: No = 1,962 | Yes = 459  
@@ -110,7 +109,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 🔟 Payment Method vs Churn
+## 10 Payment Method vs Churn
 - **Graph**: Bar Chart (barplot)  
 - **Values**:  
   - Bank transfer (auto): No = 1,286 | Yes = 258  
@@ -122,7 +121,7 @@ The purpose of EDA is to analyze the telecom dataset and identify key drivers of
 
 ---
 
-## 1️⃣1️⃣ Senior Citizen vs Churn
+## 1️1️ Senior Citizen vs Churn
 - **Graph**: Bar Chart (countplot)  
 - **Values**:  
   - Non-Seniors: No = 4,508 | Yes = 1,393  
