@@ -1,6 +1,0 @@
-2026-01-23 07:34:56,773 - INFO - Initial State: 20 features
-2026-01-23 07:34:56,773 - INFO - Technique "variance" kept 4 features
-2026-01-23 07:34:56,773 - INFO - Technique "correlation" kept 20 features
-2026-01-23 07:34:56,792 - INFO - Technique "kbest" kept 4 features
-2026-01-23 07:34:57,276 - INFO - Technique "rfe" kept 2 features
-2026-01-23 07:34:57,276 - INFO - >>>best: rfe (2 features)
