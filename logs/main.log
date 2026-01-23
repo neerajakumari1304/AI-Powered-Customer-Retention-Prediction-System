@@ -1,0 +1,103 @@
+2026-01-23 07:34:52,940 - INFO - Data loaded succesfully
+2026-01-23 07:34:52,940 - INFO - total rows in the data : 7043
+2026-01-23 07:34:52,940 - INFO - total columns in the data : 22
+2026-01-23 07:34:52,940 - INFO -  None
+2026-01-23 07:34:52,956 - INFO - Missing Values:telecom_partner     0
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+2026-01-23 07:34:52,956 - INFO -  None
+2026-01-23 07:34:52,956 - INFO - total rows in the data : 7043
+2026-01-23 07:34:52,956 - INFO - total columns in the data : 21
+2026-01-23 07:34:52,956 - INFO - Sample data with new column:
+  telecom_partner  gender  SeniorCitizen Partner Dependents  tenure PhoneService     MultipleLines InternetService OnlineSecurity OnlineBackup DeviceProtection TechSupport StreamingTV StreamingMovies        Contract PaperlessBilling              PaymentMethod  MonthlyCharges  TotalCharges Churn
+0             jio  Female              0     Yes         No       1           No  No phone service             DSL             No          Yes               No          No          No              No  Month-to-month              Yes           Electronic check           29.85         29.85    No
+1             jio    Male              0      No         No      34          Yes                No             DSL            Yes           No              Yes          No          No              No        One year               No               Mailed check           56.95       1889.50    No
+2            bsnl    Male              0      No         No       2          Yes                No             DSL            Yes          Yes               No          No          No              No  Month-to-month              Yes               Mailed check           53.85        108.15   Yes
+3          airtel    Male              0      No         No      45           No  No phone service             DSL            Yes           No              Yes         Yes          No              No        One year               No  Bank transfer (automatic)           42.30       1840.75    No
+4          airtel  Female              0      No         No       2          Yes                No     Fiber optic             No           No               No          No          No              No  Month-to-month              Yes           Electronic check           70.70        151.65   Yes
+2026-01-23 07:34:52,956 - INFO - Independent Column(X): (7043, 20)
+2026-01-23 07:34:52,956 - INFO - Dependent Column(y): (7043,)
+2026-01-23 07:34:52,956 - INFO - X_train Columns:Index(['telecom_partner', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges'],
+      dtype='object')
+2026-01-23 07:34:52,956 - INFO - X_test Columns:Index(['telecom_partner', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges'],
+      dtype='object')
+2026-01-23 07:34:52,956 - INFO - 922     0
+6668    0
+2901    0
+39      1
+4384    1
+Name: Churn, dtype: int64
+2026-01-23 07:34:52,956 - INFO - 3757    0
+620     0
+1042    0
+6910    0
+1501    0
+Name: Churn, dtype: int64
+2026-01-23 07:34:52,956 - INFO - training data size:(5634, 20)
+2026-01-23 07:34:52,956 - INFO - testing data size:(1409, 20)
+2026-01-23 07:34:56,455 - INFO - Starting Column-wise Encoding Competition
+2026-01-23 07:34:56,471 - INFO - Best encoding for "telecom_partner": label (Features: 1)
+2026-01-23 07:34:56,488 - INFO - Best encoding for "gender": label (Features: 1)
+2026-01-23 07:34:56,505 - INFO - Best encoding for "Partner": label (Features: 1)
+2026-01-23 07:34:56,521 - INFO - Best encoding for "Dependents": label (Features: 1)
+2026-01-23 07:34:56,538 - INFO - Best encoding for "PhoneService": label (Features: 1)
+2026-01-23 07:34:56,553 - INFO - Best encoding for "MultipleLines": label (Features: 1)
+2026-01-23 07:34:56,576 - INFO - Best encoding for "InternetService": label (Features: 1)
+2026-01-23 07:34:56,595 - INFO - Best encoding for "OnlineSecurity": label (Features: 1)
+2026-01-23 07:34:56,604 - INFO - Best encoding for "OnlineBackup": label (Features: 1)
+2026-01-23 07:34:56,636 - INFO - Best encoding for "DeviceProtection": label (Features: 1)
+2026-01-23 07:34:56,646 - INFO - Best encoding for "TechSupport": label (Features: 1)
+2026-01-23 07:34:56,678 - INFO - Best encoding for "StreamingTV": label (Features: 1)
+2026-01-23 07:34:56,698 - INFO - Best encoding for "StreamingMovies": label (Features: 1)
+2026-01-23 07:34:56,726 - INFO - Best encoding for "Contract": label (Features: 1)
+2026-01-23 07:34:56,746 - INFO - Best encoding for "PaperlessBilling": label (Features: 1)
+2026-01-23 07:34:56,757 - INFO - Best encoding for "PaymentMethod": label (Features: 1)
+2026-01-23 07:34:56,773 - INFO - Encoding completed. Final shape: (5634, 20)
+2026-01-23 07:34:57,740 - INFO - Selecting Data Balancing Technique (ROW-WISE)
+2026-01-23 07:34:57,833 - INFO - smote F1 score: 0.7219
+2026-01-23 07:34:57,928 - INFO - ros F1 score: 0.7285
+2026-01-23 07:34:57,992 - INFO - rus F1 score: 0.7265
+2026-01-23 07:34:58,071 - INFO - smote_tomek F1 score: 0.7479
+2026-01-23 07:34:58,151 - INFO - smote_enn F1 score: 0.8943
+2026-01-23 07:34:58,227 - INFO - adasyn F1 score: 0.6975
+2026-01-23 07:34:58,227 - INFO - Best Balancing Method Selected: smote_enn
+2026-01-23 07:34:58,227 - INFO - After Balancing:
+Churn
+0    4138
+1    1496
+Name: count, dtype: int64
+2026-01-23 07:34:58,227 - INFO - Selecting Best Feature Scaling Technique
+2026-01-23 07:34:58,230 - INFO - standard scaler -> F1 score: 0.5257
+2026-01-23 07:34:58,247 - INFO - minmax scaler -> F1 score: 0.5244
+2026-01-23 07:34:58,263 - INFO - robust scaler -> F1 score: 0.5242
+2026-01-23 07:34:58,294 - INFO - maxabs scaler -> F1 score: 0.5233
+2026-01-23 07:34:58,310 - INFO - normalize scaler -> F1 score: 0.3545
+2026-01-23 07:34:58,310 - INFO - Best Scaling Technique Selected: standard

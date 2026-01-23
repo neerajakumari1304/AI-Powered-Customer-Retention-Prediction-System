@@ -1,0 +1,34 @@
+2026-01-23 07:34:55,347 - INFO - Selecting Variable Transformation Technique
+2026-01-23 07:34:55,353 - INFO - X_train Columns : Index(['telecom_partner', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges'],
+      dtype='object')
+2026-01-23 07:34:55,353 - INFO - X_test Columns: Index(['telecom_partner', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges'],
+      dtype='object')
+2026-01-23 07:34:55,353 - INFO - X_train Numerical columns : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')
+2026-01-23 07:34:55,353 - INFO - X_train Categorical columns: Index(['telecom_partner', 'gender', 'Partner', 'Dependents', 'PhoneService',
+       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod'],
+      dtype='object')
+2026-01-23 07:34:55,353 - INFO - X_test Numerical columns: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')
+2026-01-23 07:34:55,353 - INFO - X_test Categorical columns: Index(['telecom_partner', 'gender', 'Partner', 'Dependents', 'PhoneService',
+       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod'],
+      dtype='object')
+2026-01-23 07:34:55,353 - INFO - X_train Numerical Shape: (5634, 4)
+2026-01-23 07:34:55,353 - INFO - X_train Categorical Shape: (5634, 16)
+2026-01-23 07:34:55,353 - INFO - X_test Numerical Shape: (1409, 4)
+2026-01-23 07:34:55,353 - INFO - X_test Categorical Shape: (1409, 16)
+2026-01-23 07:34:55,418 - INFO - SeniorCitizen: log | Skew=1.8467
+2026-01-23 07:34:55,457 - INFO - tenure: robust | Skew=0.2399
+2026-01-23 07:34:55,587 - INFO - MonthlyCharges: quantile | Skew=0.0195
+2026-01-23 07:34:55,734 - INFO - TotalCharges: quantile | Skew=0.0041
+2026-01-23 07:34:55,734 - INFO - Summary: {'SeniorCitizen': 'log', 'tenure': 'robust', 'MonthlyCharges': 'quantile', 'TotalCharges': 'quantile'}
