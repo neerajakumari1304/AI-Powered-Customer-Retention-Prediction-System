@@ -1,0 +1,18 @@
+2026-01-23 07:34:55,735 - INFO - dtypes: float64(4)
+2026-01-23 07:34:55,735 - INFO - memory usage: 0.2+ MB
+2026-01-23 07:34:55,949 - INFO - Visual check saved: plot_outliers/SeniorCitizen_iqr.png
+2026-01-23 07:34:56,140 - INFO - Visual check saved: plot_outliers/tenure_log.png
+2026-01-23 07:34:56,297 - INFO - Visual check saved: plot_outliers/MonthlyCharges_iqr.png
+2026-01-23 07:34:56,455 - INFO - Visual check saved: plot_outliers/TotalCharges_clip.png
+2026-01-23 07:34:56,455 - INFO - 
++----------------+---------------+--------+
+| Column         | Best Method   |   Rows |
++================+===============+========+
+| SeniorCitizen  | iqr           |   5634 |
++----------------+---------------+--------+
+| tenure         | log           |   5634 |
++----------------+---------------+--------+
+| MonthlyCharges | iqr           |   5634 |
++----------------+---------------+--------+
+| TotalCharges   | clip          |   5634 |
++----------------+---------------+--------+
