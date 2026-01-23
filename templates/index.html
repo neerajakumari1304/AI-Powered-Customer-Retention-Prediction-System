@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Retention Predictor</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { color: #333; text-align: center; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        label { font-weight: bold; display: block; margin-bottom: 5px; }
+        select, input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { grid-column: span 2; padding: 10px; background: #28a745; color: white; border: none; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        .result { text-align: center; margin-top: 20px; font-size: 20px; color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Retention Prediction</h2>
+        <form action="/predict" method="post">
+            <div class="form-grid">
+                <div>
+                    <label>Telecom Partner</label>
+                    <select name="telecom_partner">
+                        <option value="jio">Jio</option>
+                        <option value="airtel">Airtel</option>
+                        <option value="bsnl">BSNL</option>
+                        <option value="vodafone">Vodafone</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Senior Citizen (0=No, 1=Yes)</label>
+                    <input type="number" name="SeniorCitizen" min="0" max="1" required>
+                </div>
+                <div>
+                    <label>Tenure (Months)</label>
+                    <input type="number" name="tenure" step="1" required>
+                </div>
+
+                <div>
+                    <label>Partner</label>
+                    <select name="Partner">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Dependents</label>
+                    <select name="Dependents">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Internet Service</label>
+                    <select name="InternetService">
+                        <option value="DSL">DSL</option>
+                        <option value="Fiber optic">Fiber optic</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Contract</label>
+                    <select name="Contract">
+                        <option value="Month-to-month">Month-to-month</option>
+                        <option value="One year">One year</option>
+                        <option value="Two year">Two year</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Monthly Charges</label>
+                    <input type="number" name="MonthlyCharges" step="0.01" required>
+                </div>
+                <div>
+                    <label>Total Charges</label>
+                    <input type="number" name="TotalCharges" step="0.01" required>
+                </div>
+
+                <div>
+                    <label>Payment Method</label>
+                    <select name="PaymentMethod">
+                        <option value="Electronic check">Electronic check</option>
+                        <option value="Mailed check">Mailed check</option>
+                        <option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+                        <option value="Credit card (automatic)">Credit card (automatic)</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Tech Support</label>
+                    <select name="TechSupport">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No internet service">No internet service</option>
+                    </select>
+                </div>
+
+                <input type="hidden" name="PhoneService" value="Yes">
+                <input type="hidden" name="MultipleLines" value="No">
+                <input type="hidden" name="OnlineSecurity" value="No">
+                <input type="hidden" name="OnlineBackup" value="No">
+                <input type="hidden" name="DeviceProtection" value="No">
+                <input type="hidden" name="StreamingTV" value="No">
+                <input type="hidden" name="StreamingMovies" value="No">
+                <input type="hidden" name="PaperlessBilling" value="Yes">
+
+                <button type="submit">Predict Retention Status</button>
+            </div>
+        </form>
+
+        {% if prediction_text %}
+            <div class="result">
+                <strong>{{ prediction_text }}</strong>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
