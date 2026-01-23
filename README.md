@@ -348,8 +348,29 @@ The module performs a rigorous assessment of each model:
 
 - Persistence: Automatically saves the winning model object as Churn_Prediction_Best_Model.pkl using pickle.
 
+## 💻 Web Application (Flask)
+The system includes a production-ready web interface (app.py) that allows users to input customer details and receive an instant retention prediction.
+
+- Frontend: Built with HTML5 and CSS3 (index.html), featuring a responsive grid layout for 20 unique customer features.
+
+- Backend: A Flask server handles POST requests, processes raw input into DataFrames, and performs real-time label encoding.
+
+- Model Integration: Uses serialized model.pkl and scaler.pkl files (Standard Scaler) to ensure consistency between training and production environments.
+
+## 🔧 Installation & Usage
+- Clone the repository:
+`git clone https://github.com/yourusername/customer-retention-system.git`
+- Install dependencies:
+`pip install -r requirements.txt`
+- Run the Web App:
+`python app.py`
 ## 💡 Key Technical Details
 - Global Access: Models are stored as global variables (e.g., global knn_reg) to ensure they can be accessed easily within the comparison function.
 - Probability Prediction: For most models, the module uses predict_proba to calculate the True Positive Rate (TPR) and False Positive Rate (FPR) needed for the ROC Curve.
 - Grid Search: The Logistic Regression model is specifically tuned across multiple parameters ($C$: 0.01 to 100) to ensure it performs at its peak before the final comparison.
 - Error Handling: Every model training block is wrapped in a try-except block to ensure that if one model fails to converge, the rest of the competition can still proceed.
+
+## 📝 Future Scope
+- Integration of the Emotion Detection module to analyze customer sentiment during support calls.
+
+- Deployment of a real-time dashboard for retention monitoring.
