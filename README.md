@@ -367,7 +367,8 @@ The system includes a production-ready web interface (app.py) that allows users 
 
 ## 🧪 How to Use the Application
 Visit the deployed app:
-` https://ai-powered-customer-retention-prediction-3tyr.onrender.com `
+
+ https://ai-powered-customer-retention-prediction-3tyr.onrender.com 
 
 Enter customer details such as:
 
