@@ -1,6 +1,8 @@
 # AI-Powered-Customer-Retention-Prediction-System
 The goal of this project is to analyze customer data from a telecommunications company to predict whether a customer will churn (leave the service) or stay.
 
+🔗 **Live Web App**: https://ai-powered-customer-retention-prediction-3tyr.onrender.com
+
 ---
 ### Objective
 This project is a machine learning-based solution designed to predict customer churn for telecom partners (Jio, Airtel, BSNL, Vodafone). By identifying at-risk customers, the system enables businesses to implement proactive retention strategies, ultimately reducing revenue loss.
