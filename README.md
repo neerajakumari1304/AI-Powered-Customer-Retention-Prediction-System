@@ -364,13 +364,43 @@ The system includes a production-ready web interface (app.py) that allows users 
 `pip install -r requirements.txt`
 - Run the Web App:
 `python app.py`
+
+## 🧪 How to Use the Application
+Visit the deployed app:
+` https://ai-powered-customer-retention-prediction-3tyr.onrender.com `
+
+Enter customer details such as:
+
+Telecom Partner
+
+Gender
+
+Senior Citizen (0=No, 1=Yes)
+
+Tenure (Months)
+
+Partner
+
+Dependents
+
+Internet Service
+
+Contract
+
+Monthly Charges
+
+Total Charges
+
+Payment Method
+
+Tech Support
+
+Click Predict Rentention Status to view churn prediction results
+
 ## 💡 Key Technical Details
 - Global Access: Models are stored as global variables (e.g., global knn_reg) to ensure they can be accessed easily within the comparison function.
 - Probability Prediction: For most models, the module uses predict_proba to calculate the True Positive Rate (TPR) and False Positive Rate (FPR) needed for the ROC Curve.
 - Grid Search: The Logistic Regression model is specifically tuned across multiple parameters ($C$: 0.01 to 100) to ensure it performs at its peak before the final comparison.
 - Error Handling: Every model training block is wrapped in a try-except block to ensure that if one model fails to converge, the rest of the competition can still proceed.
 
-## 📝 Future Scope
-- Integration of the Emotion Detection module to analyze customer sentiment during support calls.
 
-- Deployment of a real-time dashboard for retention monitoring.
